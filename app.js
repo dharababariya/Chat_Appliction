@@ -1,4 +1,5 @@
 const express = require('express');
+const socket = require('Socket.io')
 
 
 //App setup
@@ -8,4 +9,12 @@ const server = app.listen(4000,()=>{console.log('listn port 4000')});
 
 //static file
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+
+//socket setup
+
+const io = socket(server);
+
+io.on('connection', (socket)=>{
+    console.log('create socket connection');
+})
