@@ -1,0 +1,16 @@
+
+#output {
+    block-size: 200px;
+}
+#handle {
+    inline-size: 250px;
+    margin-bottom: 15px;
+}
+#message {
+    inline-size: 250px;
+}
+#send {
+    background-color: rgb(106, 106, 207);
+    inline-size: 250px;
+    margin-top: 11px;
+}
